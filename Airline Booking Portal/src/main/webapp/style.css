@@ -1,0 +1,46 @@
+@charset "ISO-8859-1";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+	width: 100vw;
+	height: 100vh;
+}
+
+.title {
+	font-size: 2em;
+}
+
+form>label {
+	font-size: 1.2rem;
+	margin-top:5px;
+	margin-bottom: 5px;
+}
+
+form>input:not(:last-child), form>select {
+	font-size: 1.1rem;
+	border-bottom: 2px thin;
+	border-right: none;
+	border-left: none;
+	border-top: none;
+	padding: 5px;
+	outline: none;
+	margin-top:5px;
+	margin-bottom: 5px;
+}
+
+input[type="submit" i] {
+	width: 100%;
+	padding: 5px;
+	margin-top: 5px;
+	font-size: 1rem;
+}

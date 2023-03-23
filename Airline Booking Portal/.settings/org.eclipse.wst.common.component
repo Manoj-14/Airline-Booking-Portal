@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="Airline">
+        
+    <wb-module deploy-name="Airline Booking Portal">
+                
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+                
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
-        <property name="context-root" value="Airline"/>
-        <property name="java-output-path" value="/Airline/build/classes"/>
+                
+        <property name="java-output-path" value="/Airline Booking Portal/build/classes"/>
+        <property name="context-root" value="Airline Booking Portal"/>
+            
     </wb-module>
+    
 </project-modules>
