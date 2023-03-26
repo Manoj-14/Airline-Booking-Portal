@@ -13,7 +13,7 @@
 
 		<property name="dialect">org.hibernate.dialect.MySQL57Dialect</property>
 		<property name="hibernate.format_sql">true</property>
-		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.show_sql">flase</property>
 
 		<property name="hbm2ddl.auto">update</property>
 
