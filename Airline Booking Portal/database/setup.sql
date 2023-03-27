@@ -5,3 +5,7 @@ use airline;
 insert into place(name) values("Mysore");
 
 insert into admin values("manoj@gmail.com","Manoj","Manoj")
+
+drop table passenger;
+
+select * from passenger;
