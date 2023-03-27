@@ -15,7 +15,7 @@ import javax.servlet.http.HttpFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-@WebFilter(urlPatterns = { "/AddPlace" })
+@WebFilter(urlPatterns = { "/AddPlace" ,"/AddFlight","","/AddDateOfFlight","/dashboard"})
 public class SessionVerification extends HttpFilter implements Filter {
 
 	private static final long serialVersionUID = 1L;
