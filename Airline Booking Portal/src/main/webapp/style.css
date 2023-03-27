@@ -6,6 +6,20 @@
 	padding: 0;
 }
 
+#heading{
+	text-align:center; 
+}
+
+a{
+	text-decoration: none;
+	padding: .5rem;
+	margin:1rem;
+	cursor: pointer;
+	background-color: yellow;
+	color:inherit;
+	font-weight: bold;
+}
+
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -16,13 +30,32 @@
 	height: 100vh;
 }
 
+.dashboard-wrapper{
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	border:2px block thin;
+	margin: 2em;
+}
+
+div>table{
+	border-collapse: collapse;
+	margin:10px;
+}
+tr > td,tr > th{
+	padding:5px;
+}
+tr:hover{
+	background-color: yellow;
+}
+
 .title {
 	font-size: 2em;
 }
 
 form>label {
 	font-size: 1.2rem;
-	margin-top:5px;
+	margin-top: 5px;
 	margin-bottom: 5px;
 }
 
@@ -34,7 +67,7 @@ form>input:not(:last-child), form>select {
 	border-top: none;
 	padding: 5px;
 	outline: none;
-	margin-top:5px;
+	margin-top: 5px;
 	margin-bottom: 5px;
 }
 
@@ -43,4 +76,16 @@ input[type="submit" i] {
 	padding: 5px;
 	margin-top: 5px;
 	font-size: 1rem;
+}
+
+#admin-info{
+	margin: 10px;
+}
+#admin-info>p{
+	font-size: 1.2rem;
+	margin-left: 2rem;
+}
+
+.wrapper>.sub-title {
+	color: red;
 }
