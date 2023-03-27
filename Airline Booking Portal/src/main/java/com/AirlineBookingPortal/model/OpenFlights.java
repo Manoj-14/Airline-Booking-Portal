@@ -79,4 +79,9 @@ class OpenFlightsPK implements Serializable {
 		this.date = date;
 	}
 
+	@Override
+	public String toString() {
+		return "OpenFlightsPK [flight=" + flight + ", date=" + date + "]";
+	}
+
 }
