@@ -18,7 +18,6 @@ public class Flight {
 	@ManyToOne
 	private Place source;
 	@ManyToOne
-	
 	private Place destination;
 
 	public Flight() {
@@ -69,6 +68,12 @@ public class Flight {
 
 	public void setDestination(Place destination) {
 		this.destination = destination;
+	}
+
+	@Override
+	public String toString() {
+		return "Flight [flight_id=" + flight_id + ", flightname=" + flightname + ", numofpassengers=" + numofpassengers
+				+ ", source=" + source + ", destination=" + destination + "]";
 	}
 
 }
