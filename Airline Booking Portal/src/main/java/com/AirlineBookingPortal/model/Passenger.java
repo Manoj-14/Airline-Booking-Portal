@@ -24,20 +24,16 @@ public class Passenger {
 	@ManyToOne
 	@JoinColumn(name = "flight_id", referencedColumnName = "flight_id")
 	private Flight flight;
-	private Date created;
-
-	@PrePersist
-	protected void onCreate() {
-		created = new Date();
-	}
+	private Date date;
 
 	public Passenger() {
 	}
 
-	public Passenger(String name, int age, Flight flight) {
+	public Passenger(String name, int age, Flight flight, Date date) {
 		this.name = name;
 		this.age = age;
 		this.flight = flight;
+		this.date = date;
 	}
 
 	public int getId() {
@@ -72,12 +68,14 @@ public class Passenger {
 		this.flight = flight;
 	}
 
-	public Date getCreated() {
-		return created;
+	public Date getDate() {
+		return date;
 	}
 
-	public void setCreated(Date created) {
-		this.created = created;
+	public void setDate(Date date) {
+		this.date = date;
 	}
+
+	
 
 }
